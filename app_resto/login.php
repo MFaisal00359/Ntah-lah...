@@ -4,7 +4,7 @@ session_start();
 // koneksi 
 require 'functions.php';
 
-//cek apakah tombol Login sudah di tekan
+//cek apakah tombol logi sudah di tekan
 if(isset($_SESSION["login"])){
 	header("location: index.php");
 	exit;
@@ -69,6 +69,7 @@ $result = mysqli_query($conn,$sql);
 
 		<button type="submit" name="login">Login!</button>
 		<br>
-	</form></center>
+	</form>
+	</center>
 </body>
 </html>
